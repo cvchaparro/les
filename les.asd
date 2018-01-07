@@ -1,5 +1,5 @@
 (defsystem #:les
-  :version "0.0.1"
+  :version (:read-file-form "version" :at 0)
   :description "Help English teachers test their student's speaking skills."
   :author "Cameron V Chaparro <cvchaparro.dev@gmail.com>"
   :license "GPLv3+"
