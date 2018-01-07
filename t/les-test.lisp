@@ -1,9 +1,10 @@
 (defpackage #:les-test
   (:use #:cl
-        #:prove))
+        #:prove
+        #:les))
 
 (in-package #:les-test)
 
 (plan 1)
-(ok t)
+(ok (not (nothing)))
 (finalize)

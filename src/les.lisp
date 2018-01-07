@@ -1,4 +1,8 @@
 (defpackage #:les
-  (:use #:cl))
+  (:use #:cl)
+  (:export #:nothing))
 
 (in-package #:les)
+
+(defun nothing ()
+  nil)
