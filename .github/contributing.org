@@ -1,0 +1,77 @@
+#+TITLE: Contributing to LES
+
+Thank you for your interest in contributing to LES! I am excited to welcome
+you to the community, and hope you enjoy your time here!
+
+Any and all help is happily welcomed and appreciated. In order to make the
+process as smooth as possible for everyone, there are a few guidelines that I
+ask all contributors to follow. Also, please note that all contributors are
+expected to adhere to the [[file:code_of_conduct.org][code of conduct]] - this helps keep high standards among
+community members and promotes a welcoming environment for everyone.
+
+* The Basics
+
+If you're in too much of a hurry, or too lazy, to read the whole document, feel
+free to read the section relevant to what you're trying to accomplish.
+
+** If you have a question:
+
+   Please refer to the excellent article by Eric S Raymond on [[http://catb.org/~esr/faqs/smart-questions.html][how to ask
+   questions the smart way]]. It will save you and me a lot of time and get any
+   question you have answered that much more quickly.
+
+   Once you've read that, done some research, and still haven't found an answer,
+   then feel free to send me a message on the [[https://gitter.im/lets-engage-students][les gitter chat]].
+
+** If you have found a bug:
+
+   My philosophy on bugs is pretty simple. In addition to the common bugs - i.e.
+   "it doesn't work" or "it doesn't work like it says it does" types of bugs,
+   please consider reporting the following:
+   1. If the documentation is too long, hard to read, has typos - (not counting
+      differences in, for example, US English vs British English unless both are
+      being used simultaneously...yikes!), grammatical mistakes, etc, then you've
+      found a bug.
+   2. If the site isn't easy and natural to use, does something strange, takes
+      too long to load, etc, then you've found a bug.
+   3. If the code is unreadable, difficult to understand, seems to be doing too
+      much in one function, etc, then you've found a bug.
+
+   If you find any bugs, please feel free to [[https://github.com/cvchaparro/les/issues/new][open an issue]] in the project's
+   [[https://github.com/cvchaparro/les/issues][issue tracker]] and I will address it as soon as possible. If it's something
+   with which you are familiar, please submit a pull request. That said, before
+   opening a new ticket or pull request, please do a search to make sure the
+   issue has not already been reported. This will allow me to work more quickly
+   and avoid having to determine that an issue is duplicated.
+
+** If you want to propose an idea for a feature:
+
+   Please make sure the requested feature has not already been proposed. Again,
+   duplicated work will, inevitably, slow down progress on adding any new
+   features. If your feature (or a similar one) has already been requested,
+   please do not open a new issue to request the feature. Instead, add a comment
+   to the feature request that was already proposed to let me know that it's
+   something that will provide value for you.
+
+** If you want to submit a pull request:
+
+   First off, thank you; your help is greatly appreciated! To maximize the
+   chance of your changes being merged, be sure to complete all sections of the
+   pull request template and follow the [[https://google.github.io/styleguide/lispguide.xml][style guide]]. I consider clean code to be
+   a top priority so if what you've submitted is unreadable or generally ugly
+   that will need to be fixed before being merged - it is a bug!
+
+   Secondly, all code changes require tests! Again, *all code changes and
+   additions REQUIRE tests*. Pull requests that don't add / update tests, will
+   not be merged. On a related note, if you have found a test that is not
+   testing anything (anymore?), remove it.
+
+   Next, prefer doc strings to comments. Comments are liars and should only be
+   used in extreme situations - and these situations will need to be refactored.
+   Finally, *never* submit commented out code, this is blasphemy!
+
+* License
+
+This project is licensed under the terms of the GNU General Public License
+version 3. Please be sure that any use, contributions, etc comply with these
+terms. You can find the license in the [[file:../LICENSE][LICENSE]] file or on the web at [[https://www.gnu.org/licenses/gpl-3.0.en.html][GPL3]].
