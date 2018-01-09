@@ -1,0 +1,18 @@
+#+TITLE: Code of Conduct
+
+* Some basic DOs and DON'Ts
+  1. Do: give constructive feedback
+     - For example: offer better solutions; give praise when it's deserved;
+       offer guidance when someone strays; etc
+  2. Do: research before asking questions
+     - For example: How do I get to the website? Where is the code for X? Can
+       you add this feature? etc
+  3. Do: contribute
+     - For example: submit pull requests for documentation, code, etc; submit
+       bug reports, feature requests, etc; spread the word
+  4. Don't: make the community an unwelcoming place
+     - For example: don't harass people; don't be negative; don't be judgmental
+  5. Don't: use this in GPL-incompatible software
+     - For example: add substantial portions of this project to a proprietary
+       system; add substantial portions of this project to a system that is
+       licensed in such a way as to allow inclusion in proprietary systems
