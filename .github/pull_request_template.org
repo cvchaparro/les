@@ -1,11 +1,11 @@
-*** Requirements
+### Requirements
 
-*** Description
+### Description
 
-*** Benefits
+### Benefits
 
-*** Possible drawbacks
+### Possible drawbacks
 
-*** Verification process
+### Verification process
 
-*** Applicable issues
+### Applicable issues
