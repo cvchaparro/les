@@ -1,13 +1,13 @@
-*** Description
+#### Description
 
-*** Steps to reproduce
+#### Steps to reproduce
 
-*** Expected behavior
+#### Expected behavior
 
-*** Actual behavior
+#### Actual behavior
 
-*** System specifications (please include versions)
-    - OS:
-    - Web browser:
+#### System specifications (please include versions)
+- OS:
+- Web browser:
 
-*** Other notes
+#### Other notes
