@@ -3,6 +3,8 @@
   :description "Help English teachers test their student's speaking skills."
   :author "Cameron V Chaparro <cvchaparro.dev@gmail.com>"
   :license "GPLv3+"
+  :depends-on (#:cl-who
+               #:hunchentoot)
   :components ((:module "src"
                 :components
                 ((:file "les"))))

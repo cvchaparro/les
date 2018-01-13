@@ -11,5 +11,7 @@ install:
 
 script:
   - cl -l prove
+       -l hunchentoot
+       -l cl-who
        -e '(or (prove:run :les-test)
                (uiop:quit -1))'
