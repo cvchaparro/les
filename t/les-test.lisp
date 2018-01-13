@@ -5,6 +5,9 @@
 
 (in-package #:les-test)
 
-(plan 1)
-(ok (not (nothing)))
+(plan 2)
+
+(ok (play) "can call PLAY function")
+(ok (record) "can call RECORD function")
+
 (finalize)

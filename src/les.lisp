@@ -1,8 +1,14 @@
 (defpackage #:les
-  (:use #:cl)
-  (:export #:nothing))
+  (:use #:cl
+        #:cl-who)
+  (:export
+   #:play
+   #:record))
 
 (in-package #:les)
 
-(defun nothing ()
-  nil)
+(defun play ()
+  t)
+
+(defun record ()
+  t)
