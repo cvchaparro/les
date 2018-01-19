@@ -38,6 +38,6 @@
                  "<p>well, hi there!</p>"
                  "</body>"
                  "</html>")
-    "can generate a basic with h1 and p tags in the body page")
+    "can generate a basic HTML page with h1 and p tags in the body page")
 
 (finalize)
