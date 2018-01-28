@@ -15,7 +15,7 @@ script:
        -l cl-coveralls
        -l hunchentoot
        -l cl-who
-       -e '(ql:quickload :trivial-features)'
+       -e '(ql:quickload :cffi)'
        -e '(or (prove:run :les-test)
                (uiop:quit -1))'
        -e '(coveralls:with-coveralls (:exclude (list "t"))
