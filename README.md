@@ -1,6 +1,7 @@
 # LES: Let's Engage Students!
 
 [![Build Status](https://travis-ci.org/cvchaparro/les.svg?branch=master)](https://travis-ci.org/cvchaparro/les)
+[![Coverage Status](https://coveralls.io/repos/github/cvchaparro/les/badge.svg?branch=master)](https://coveralls.io/github/cvchaparro/les?branch=master)
 
 An application with the goal of helping English teachers (specifically, ESL teachers) test their student's speaking abilities.
 
