@@ -4,15 +4,13 @@ sudo: required
 
 env:
   matrix:
-    - LISP=sbcl COVERALLS=true
+    - LISP=sbcl
 
 install:
   - curl https://raw.githubusercontent.com/luismbo/cl-travis/master/install.sh | bash
-  - git clone https://github.com/fukamachi/cl-coveralls ~/lisp/cl-coveralls
 
 script:
   - cl -l prove
-       -l cl-coveralls
        -l hunchentoot
        -l cl-who
        -e '(or (prove:run :les-test)
