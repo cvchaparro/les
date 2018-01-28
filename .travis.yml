@@ -12,6 +12,7 @@ install:
 
 script:
   - cl -l prove
+       -l cl-coveralls
        -l hunchentoot
        -l cl-who
        -e '(or (prove:run :les-test)
