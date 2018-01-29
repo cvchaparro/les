@@ -3,6 +3,5 @@
   :depends-on (#:les
                #:prove)
   :components ((:module "t"
-                :serial t
                 :components
                 ((:file "les-test")))))
