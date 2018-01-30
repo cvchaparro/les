@@ -17,7 +17,5 @@ script:
        -l cl-coveralls
        -l trivial-features
        -l babel
-       -e '(or (prove:run :les-test)
-               (uiop:quit -1))'
        -e '(coveralls:with-coveralls (:exclude (list "t"))
-             (ql:quickload :les))'
+             (prove:run :les-test))'
