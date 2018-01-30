@@ -11,6 +11,6 @@ install:
 
 script:
   - cl -l prove
-       -e '(ql:quickload :cl-coveralls)'
-       -e '(coveralls:with-coveralls (:exclude (list "t"))
+       -e '(ql:quickload :cl-coveralls)
+           (coveralls:with-coveralls (:exclude (list "t"))
              (prove:run :les-test))'
