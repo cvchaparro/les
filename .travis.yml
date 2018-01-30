@@ -8,14 +8,9 @@ env:
 
 install:
   - curl https://raw.githubusercontent.com/luismbo/cl-travis/master/install.sh | bash
-  - git clone https://github.com/fukamachi/cl-coveralls ~/lisp/cl-coveralls
-  - git clone https://github.com/trivial-features/trivial-features ~/lisp/trivial-features
-  - git clone https://github.com/cl-babel/babel ~/lisp/babel
 
 script:
   - cl -l prove
-       -l cl-coveralls
-       -l trivial-features
-       -l babel
+       -e '(ql:quickload :cl-coveralls)'
        -e '(coveralls:with-coveralls (:exclude (list "t"))
              (prove:run :les-test))'
