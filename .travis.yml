@@ -12,8 +12,7 @@ install:
 
 script:
   - cl -l prove
-       -l hunchentoot
-       -l cl-who
+       -l cl-coveralls
        -e '(or (prove:run :les-test)
                (uiop:quit -1))'
        -e '(coveralls:with-coveralls (:exlude (list "t"))
