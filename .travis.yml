@@ -4,10 +4,11 @@ sudo: required
 
 env:
   matrix:
-    - LISP=sbcl
+    - LISP=sbcl COVERALLS=true
 
 install:
   - curl https://raw.githubusercontent.com/luismbo/cl-travis/master/install.sh | bash
+  - git clone https://github.com/fukamachi/cl-coveralls ~/lisp/cl-coveralls
 
 script:
   - cl -l prove
@@ -15,3 +16,5 @@ script:
        -l cl-who
        -e '(or (prove:run :les-test)
                (uiop:quit -1))'
+       -e '(coveralls:with-coveralls (:exlude (list "t"))
+             (ql:quickload :les))'
