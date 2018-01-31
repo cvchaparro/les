@@ -23,7 +23,7 @@
 
 (defun render (template-path &optional env)
   (let ((template (gethash template-path *template-registry*)))
-    (unless tempalte
+    (unless template
       (setf template (djula:compile-template* (princ-to-string template-path)))
       (setf (gethash template-path *template-registry*) template))
     (apply #'djula:render-template*
