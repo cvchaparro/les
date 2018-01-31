@@ -19,3 +19,20 @@ a:hover {
 #main {
     text-align: center;
 }
+
+audio {
+    padding-top: 15px;
+    width: 70%;
+}
+
+label {
+    font-weight: bold;
+    font-size: 150%;
+    padding: 5px 20px;
+}
+
+#question-area, #answer-area {
+    margin: 5px 20px;
+    padding: 10px;
+    text-align: left;
+}

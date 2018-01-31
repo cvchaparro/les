@@ -1,8 +1,24 @@
 {% extends "layouts/default.html" %}
 {% block title %}LES: Let's Engage Students! -- Home{% endblock %}
 {% block content %}
-  <div id="main">
-    Welcome to LES: Let's Engage Students!
-    <p>Here's some nice text...</p>
-  </div>
+<div id="main">
+    <h1>Welcome to LES!</h1>
+
+    <div id="question-area">
+        <label for="question">Click the play button to listen to Question #1</label><br>
+        <audio id="question" controls>
+            <source src="/media/question.ogg" type="audio/ogg">
+            Your browser doesn't support this application.
+        </audio>
+    </div>
+
+    <br>
+
+    <div id="answer-area">
+        <label for="answer">Record your answer for Question #1</label><br>
+        <audio id="answer" disabled controls>
+            Your browser doesn't support this application.
+        </audio>
+    </div>
+</div>
 {% endblock %}

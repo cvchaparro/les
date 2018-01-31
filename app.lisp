@@ -18,7 +18,7 @@
 (builder
  (:static
   :path (lambda (path)
-          (if (ppcre:scan "^(?:/images/|/css/|/js/|/robot\\.txt$|/favicon\\.ico$)" path)
+          (if (ppcre:scan "^(?:/images/|/media/|/css/|/js/|/robot\\.txt$|/favicon\\.ico$)" path)
               path
               nil))
   :root *static-directory*)
