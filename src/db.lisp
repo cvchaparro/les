@@ -1,5 +1,5 @@
 (in-package #:cl-user)
-(defpackage :les.db
+(defpackage #:les.db
   (:use #:cl
         #:cl-json
         #:drakma)

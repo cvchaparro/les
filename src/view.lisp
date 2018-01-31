@@ -1,5 +1,5 @@
 (in-package #:cl-user)
-(defpackage :les.view
+(defpackage #:les.view
   (:use #:cl)
   (:import-from #:les.config
                 #:*template-directory*)

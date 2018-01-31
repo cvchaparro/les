@@ -1,6 +1,6 @@
 (ql:quickload :les)
 
-(defpackage :les.app
+(defpackage #:les.app
   (:use #:cl)
   (:import-from #:lack.builder
                 #:builder)

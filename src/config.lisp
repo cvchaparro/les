@@ -1,5 +1,5 @@
 (in-package #:cl-user)
-(defpackage :les.config
+(defpackage #:les.config
   (:use #:cl)
   (:import-from #:envy
                 #:config-env-var

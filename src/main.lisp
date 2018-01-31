@@ -1,4 +1,4 @@
-(defpackage :les
+(defpackage #:les
   (:use #:cl
         #:cl-who)
   (:import-from #:les.config
@@ -23,7 +23,7 @@
   (when *handler*
     (restart-case (error "Server is already running.")
       (restart-server ()
-        :report "Restarting the server..."
+        :report "Restart the server"
         (stop))))
   (setf *handler*
         (apply #'clackup *appfile-path* args)))
