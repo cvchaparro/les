@@ -25,14 +25,46 @@ audio {
     width: 70%;
 }
 
-label {
+label, #countdown-content {
     font-weight: bold;
     font-size: 150%;
     padding: 5px 20px;
 }
 
-#question-area, #answer-area {
+#countdown-area {
+    display: none;
+}
+
+#question-area, #answer-area, #countdown-area {
     margin: 5px 20px;
     padding: 10px;
     text-align: left;
+}
+
+.button {
+    cursor: pointer;
+    font-size: 250%;
+}
+
+#play-question {
+    color: green;
+}
+#play-question:hover {
+    color: darkgreen;
+}
+
+#record-answer {
+    color: red;
+}
+#record-answer:hover {
+    color: darkred;
+}
+
+#download {
+    font-size: 100%;
+    color: blue;
+    text-decoration: none;
+}
+#download:hover {
+    color: darkblue;
 }

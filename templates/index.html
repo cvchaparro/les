@@ -5,9 +5,12 @@
     <h1>Welcome to LES!</h1>
 
     <div id="question-area">
-        <label for="question">Click the play button to listen to Question #1</label><br>
-        <audio id="question" controls>
-            <source src="/media/question.ogg" type="audio/ogg">
+        <span id="play-question" class="button">&#x25B6;</span>
+        <label for="question">
+            Click the play button to listen to Question #1
+        </label>
+        <audio id="question">
+            <source src="/media/question.ogg" type="application/ogg">
             Your browser doesn't support this application.
         </audio>
     </div>
@@ -15,10 +18,21 @@
     <br>
 
     <div id="answer-area">
-        <label for="answer">Record your answer for Question #1</label><br>
-        <audio id="answer" disabled controls>
+        <span id="record-answer" class="button">&#x25C9;</span>
+        <label for="answer">
+            Record your answer for Question #1
+        </label>
+        <audio id="answer" autoplay muted>
             Your browser doesn't support this application.
         </audio>
     </div>
+
+    <br>
+
+    <div id="countdown-area">
+        <span id="download-btn" class="button"><a id="download" class="button"></a></span>
+        <span id="countdown-content"></span>
+    </div>
 </div>
+<script src="/js/record-answer.js"></script>
 {% endblock %}
