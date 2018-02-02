@@ -121,6 +121,11 @@
                 download.download = "answer-01.ogg";
                 setCountdownContentMessage("Download and save your recording!");
                 document.getElementById("download").innerHTML = "&#x2B07;";
+            })
+            .catch(reason => {
+                microphone = null;
+                alert("An error occurred due to " + reason);
+                console.log(reason);
             });
     }
 })();
