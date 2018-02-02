@@ -2,6 +2,8 @@
     const DEFAULT_PAUSE_BEFORE_RECORDING_IN_SECONDS = 3;
     const DEFAULT_RECORDING_LENGTH_IN_SECONDS = 30;
 
+    let recordStarted = false;
+
     let microphone;
     document.body.onload = event => setMicrophone();
 
@@ -15,10 +17,18 @@
     };
 
     let recordAnswerButton = document.getElementById("record-answer");
-    recordAnswerButton.onclick = event => recordAnswer(
-        DEFAULT_PAUSE_BEFORE_RECORDING_IN_SECONDS,
-        DEFAULT_RECORDING_LENGTH_IN_SECONDS
-    );
+    recordAnswerButton.onclick = event => {
+        if (!recordingStarted) {
+            if (!microphone)
+                setMicrophone();
+
+            recordingStarted = true;
+            recordAnswer(
+                DEFAULT_PAUSE_BEFORE_RECORDING_IN_SECONDS,
+                DEFAULT_RECORDING_LENGTH_IN_SECONDS
+            );
+        }
+    };
 
     function setMicrophone() {
         if (!navigator.mediaDevices) {
@@ -86,6 +96,7 @@
                 let recorded = wait(recordTime).then(() => {
                     setCountdownContentMessage("Stopped recording!");
                     recorder.state == "recording" && recorder.stop();
+                    recordingStarted = false;
                 });
 
                 return Promise.all([
