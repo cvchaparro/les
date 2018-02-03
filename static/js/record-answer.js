@@ -2,7 +2,7 @@
     const DEFAULT_PAUSE_BEFORE_RECORDING_IN_SECONDS = 3;
     const DEFAULT_RECORDING_LENGTH_IN_SECONDS = 30;
 
-    let recordStarted = false;
+    let recordingStarted = false;
 
     let microphone;
     document.body.onload = event => setMicrophone();
